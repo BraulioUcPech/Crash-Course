@@ -10,24 +10,59 @@ npm create astro@latest -- --template basics
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+![just-the-basics](./public/img/captura-1.png)
 
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+
+
+└── 📁Crash-Course
+    └── .prettierrc.mjs
+    └── 📁.vscode
+        └── extensions.json
+        └── launch.json
+    └── astro.config.mjs
+    └── package.json
+    └── pnpm-lock.yaml
+    └── 📁public
+        └── favicon.svg
+        └── 📁fonts
+        └── 📁img
+            └── art1.jpg
+            └── art2.jpg
+            └── art3.jpg
+            └── art4.jpg
+            └── avatar.png
+            └── captura-1.png
+            └── dribble.png
+            └── fancy-line.svg
+            └── favicon.svg
+            └── main-portrait.jpg
+            └── paint.png
+            └── paint.svg
+            └── post-image.jpg
+            └── scribble.svg
+            └── twitter.png
+        ├── styles
+    └── README.md
+    └── 📁src
+        └── 📁components
+            └── Form.tsx
+            └── Gallery.astro
+            └── Instro.astro
+            └── Nav.tsx
+            └── Testimonials.astro
+            └── 📁util
+                └── Scribble.astro
+        └── env.d.ts
+        └── 📁pages
+            └── contact.astro
+            └── index.astro
+    └── tailwind.config.mjs
+    └── tsconfig.json
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
