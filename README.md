@@ -10,7 +10,7 @@ npm create astro@latest -- --template basics
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![just-the-basics](./public/img/captura-1.png)
+![just-the-basics]<blockquote class="imgur-embed-pub" lang="en" data-id="yInImor"><a href="https://imgur.com/yInImor">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 ## 🚀 Project Structure
 
