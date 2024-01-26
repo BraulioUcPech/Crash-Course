@@ -17,6 +17,42 @@ npm create astro@latest -- --template basics
 Inside of your Astro project, you'll see the following folders and files:
 
 ```text
+// Importa el paquete mssql
+const sql = require('mssql');
+
+// Configura tus detalles de conexión
+const config = {
+    user: 'username',
+    password: 'password',
+    server: 'localhost', 
+    database: 'database'
+};
+
+// Crea una función async para obtener datos
+async function getData() {
+    try {
+        // Crea una conexión
+        let pool = await sql.connect(config);
+        // Realiza una consulta
+        let result = await pool.request().query('SELECT * FROM table');
+        // Devuelve los resultados
+        return result.recordsets[0];
+    } catch (err) {
+        // Maneja cualquier error
+        console.error(err);
+    }
+}
+
+// Utiliza la función en tu componente Astro
+---
+const data = await getData();
+---
+<h1>Mis Datos</h1>
+<ul>
+{data.map(item => (
+    <li>{item.columnName}</li>
+))}
+</ul>
 
 
 └── 📁Crash-Course
